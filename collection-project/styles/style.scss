@@ -1,0 +1,24 @@
+body {
+    header{
+        width: 80%;
+        margin: auto;
+        h1{
+            
+        }
+    }
+    main{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        article{
+            width: 24%;
+        }
+    }
+}
+@media screen and (max-width:768px) {
+   body{
+
+   } 
+}
