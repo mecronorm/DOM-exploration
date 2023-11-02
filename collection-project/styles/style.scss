@@ -5,6 +5,7 @@ body {
     margin: auto;
     header{
         h1{
+            margin: 10px;
             text-align: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
@@ -14,6 +15,8 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         article{
+            display: flex;
+            flex-direction: column;
             background-color: white;
             height: auto;
             border-color: black;
@@ -47,11 +50,20 @@ body {
             }
             sub{
                 font-size: 18px;
-                margin: 0 10px;
+                margin: auto 10px 0px 10px;
             }
             p{
                 margin: 0 10px;
                 font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            hr{
+                margin: 0 10px;
+            }
+            a{
+                margin: 10px;
+                img{
+                    width: 35px;
+                }
             }
         }
     }
