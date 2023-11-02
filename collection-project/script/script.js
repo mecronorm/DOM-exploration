@@ -55,6 +55,46 @@ const collection = [
         picture: "./images/hitman.jpg",
         link: "https://store.steampowered.com/app/1659040/HITMAN_3/"
     },
+    {
+        name: "Resident Evil 4 Remake",
+        developer: "CAPCOM Co., Ltd.",
+        releaseDate: "24 Mar, 2023",
+        tags: ["Horror", "Action"],
+        picture: "./images/resi.jpg",
+        link: "https://store.steampowered.com/app/2050650/Resident_Evil_4/"
+    },
+    {
+        name: "Phoenix Wright: Ace Attorney Trilogy",
+        developer: "CAPCOM Co., Ltd.",
+        releaseDate: "9 Apr, 2019 (on steam)",
+        tags: ["Detective", "Mystery"],
+        picture: "./images/ace.jpg",
+        link: "https://store.steampowered.com/app/787480/Phoenix_Wright_Ace_Attorney_Trilogy/"
+    },
+    {
+        name: "My Time At Sandrock",
+        developer: "Pathea Games",
+        releaseDate: "2 Nov, 2023",
+        tags: ["Life sim", "Building"],
+        picture: "./images/sandrock.jpg",
+        link: "https://store.steampowered.com/app/1084600/My_Time_at_Sandrock/"
+    },
+    {
+        name: "Tower Unite",
+        developer: "PixelTail Games",
+        releaseDate: "8 Apr, 2016",
+        tags: ["Casual", "Early Access"],
+        picture: "./images/tower.png",
+        link: "https://store.steampowered.com/app/394690/Tower_Unite/"
+    },
+    {
+        name: "Cult of the Lamb",
+        developer: "Massive Monster",
+        releaseDate: "11 Aug, 2022",
+        tags: ["Base Building", "Cute"],
+        picture: "./images/cotl.avif",
+        link: "https://store.steampowered.com/app/1313140/Cult_of_the_Lamb/"
+    },
 ]
 
 collection.forEach(game => {
