@@ -7,31 +7,31 @@ const collection = [
     },
     {
         name: "Aiki noodles",
-        price: 5.00,
+        price: 5.99,
         tags: ["Fast Food", "Asian"],
         picture: "../images/220629-Bluemango-Aiki02-1.jpg", 
     },
     {
         name: "Aiki noodles",
-        price: 5.00,
+        price: 5.99,
         tags: ["Fast Food", "Asian"],
         picture: "../images/220629-Bluemango-Aiki02-1.jpg", 
     },
     {
         name: "Aiki noodles",
-        price: 5.00,
+        price: 5.99,
         tags: ["Fast Food", "Asian"],
         picture: "../images/220629-Bluemango-Aiki02-1.jpg", 
     },
     {
         name: "Aiki noodles",
-        price: 5.00,
+        price: 5.99,
         tags: ["Fast Food", "Asian"],
         picture: "../images/220629-Bluemango-Aiki02-1.jpg", 
     },
     {
         name: "Aiki noodles",
-        price: 5.00,
+        price: 5.99,
         tags: ["Fast Food", "Asian"],
         picture: "../images/220629-Bluemango-Aiki02-1.jpg", 
     },
@@ -55,9 +55,10 @@ collection.forEach(foodCard => {
     article.append(tagList)
     const priceBuy = document.createElement("div")
     const price = document.createElement("p")
-    price.innerHTML = foodCard.price
+    price.innerHTML = foodCard.price + "€"
     const shopCart = document.createElement("button")
     priceBuy.append(price)
+    shopCart.innerHTML = "Add to cart"
     priceBuy.append(shopCart)
     priceBuy.className = "buy-now"
     article.append(priceBuy)
