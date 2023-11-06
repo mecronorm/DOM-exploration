@@ -1,6 +1,4 @@
 body{
-    display: flex;
-    flex-wrap: wrap;
     background-color: antiquewhite;
     header{
         width: 100%;
@@ -97,6 +95,26 @@ body{
         position: fixed;
         right: 0;
         top: 0;
-        display: none;
+        // display: none;
+        h3{
+            float: left;
+            margin: 25px 10px;
+        }
+        button{
+            float: right;
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+            background-color: rgb(54, 107, 199);
+            border-radius: 50%;
+            border-style: solid;
+            color: white;
+            box-sizing: border-box;
+            padding: 5px 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            img{
+                width: 100%;
+            }
+        }
     }
 }
