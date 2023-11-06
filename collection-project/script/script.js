@@ -128,3 +128,18 @@ collection.forEach(game => {
     article.append(link)
     document.body.children[1].append(article)
 });
+
+const searchBar = document.querySelector("input")
+const articles = document.querySelector("main")
+searchBar.addEventListener("input", (event) => {
+    articles.childNodes.forEach(article => {
+        console.log(article)
+        if (article.nodeType === 1) {  
+            if (article.children[2].innerHTML.toUpperCase().includes(event.target.value.toUpperCase())) {
+                article.style.display = "flex"
+            } else {
+                article.style.display = "none"
+            }
+        }
+    })
+})
