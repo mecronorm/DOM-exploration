@@ -220,3 +220,34 @@ darkMode.addEventListener("click", (event) =>{
     })
     cancel.classList.toggle("dark-mode")
 })
+console.log(document.body.scrollTop);
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        darkMode.style.display = "block"
+        cartButton.style.display = "block"
+    } else {
+        darkMode.style.display = "none"
+        cartButton.style.display = "none"
+    }
+}
+if (window.innerWidth <= 600){
+    window.onscroll = scrollFunction
+    darkMode.style.display = "none"
+    cartButton.style.display = "none"
+} else {
+    window.onscroll = ""
+    darkMode.style.display = "block"
+    cartButton.style.display = "block"
+}
+function onResizeFunction() {
+    if (window.innerWidth <= 600){
+        window.onscroll = scrollFunction
+        darkMode.style.display = "none"
+        cartButton.style.display = "none"
+    } else {
+        window.onscroll = ""
+        darkMode.style.display = "block"
+        cartButton.style.display = "block"
+    }
+}
+window.onresize = onResizeFunction
