@@ -4,15 +4,16 @@ body{
         width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
         h1{
             margin: 20px 10px;
             font-size: 50px;
         }
         button{
+            position: fixed;
+            right: 0;
             height: 50px;
             width: 50px;
-            margin: 10px;
+            margin: 20px;
             background-color: rgb(54, 107, 199);
             border-radius: 50%;
             border-style: solid;
