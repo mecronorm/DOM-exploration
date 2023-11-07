@@ -99,7 +99,7 @@ body{
         position: fixed;
         right: 0;
         top: 0;
-        // display: none;
+        display: none;
         .shopping{
             border-bottom: 1px solid lightgrey;
             display: flex;
@@ -140,11 +140,14 @@ body{
         }
         .check-out{
             border-top: 1px solid lightgray;
-            width: 100%;
+            background-color: white;
+            width: 250px;
             display: flex;
             flex-wrap: wrap;
             align-self: flex-end;
             justify-content: end;
+            position: fixed;
+            bottom: 0;
             p{
                 box-sizing: border-box;
                 width: 50%;
