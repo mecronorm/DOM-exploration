@@ -186,7 +186,7 @@ collection.forEach(foodCard => {
     document.body.children[1].append(article)
 });
 
-const cartButton = document.body.children[0].children[1]
+const cartButton = document.body.children[0].children[2]
 const shoppingCartButton = document.body.children[2].children[0].children[1]
 const aside = document.body.children[2]
 cartButton.addEventListener("click", (event) =>{
@@ -204,4 +204,19 @@ cancel.addEventListener("click", (event) =>{
     }
     totalAmmount.innerHTML = "0.00€"
     ammount = 0.00
+})
+
+const darkMode = document.body.children[0].children[1]
+darkMode.addEventListener("click", (event) =>{
+    document.body.classList.toggle("dark-mode")
+    document.body.children[2].classList.toggle("dark-mode")
+    const allArticles = document.querySelectorAll("article")
+    allArticles.forEach(article =>{
+        article.classList.toggle("dark-mode")
+    })
+    const allSpan = document.querySelectorAll("span")
+    allSpan.forEach(span =>{
+        span.classList.toggle("dark-mode")
+    })
+    cancel.classList.toggle("dark-mode")
 })
