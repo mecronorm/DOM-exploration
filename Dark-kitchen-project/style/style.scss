@@ -126,8 +126,11 @@ body{
             }
         }
         ul{
+            height: 84vh;
+            overflow-y: scroll;
             box-sizing: border-box;
             width: 100%;
+            margin: 0;
             margin-bottom: auto;
             padding: 0;
             li{
@@ -167,7 +170,7 @@ body{
                 padding: 5px 10px;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
-            .cancel{
+            #cancel{
                 background-color: rgba(0, 128, 0, 0);
                 color: black;
             }

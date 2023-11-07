@@ -71,7 +71,6 @@ collection.forEach(foodCard => {
         document.body.children[2].children[1].append(buyList)
         ammount = ammount + foodCard.price
         totalAmmount.innerHTML = ammount.toFixed(2) + "€"
-        console.log(totalAmmount);
     })
     priceBuy.append(shopCart)
     priceBuy.className = "buy-now"
@@ -87,4 +86,14 @@ cartButton.addEventListener("click", (event) =>{
 })
 shoppingCartButton.addEventListener("click", (event) =>{
     aside.style.display = "none"
+})
+
+const cancel = document.getElementById("cancel")
+const shoppingList = document.body.children[2].children[1]
+cancel.addEventListener("click", (event) =>{
+    while (shoppingList.firstChild) {
+        shoppingList.removeChild(shoppingList.lastChild)
+    }
+    totalAmmount.innerHTML = "0.00€"
+    ammount = 0.00
 })
