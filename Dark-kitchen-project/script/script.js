@@ -36,7 +36,7 @@ const collection = [
         picture: "../images/220629-Bluemango-Aiki02-1.jpg", 
     },
 ]
-
+const ammount = [];
 collection.forEach(foodCard => {
     const article = document.createElement("article")
     const image = document.createElement("div")
@@ -59,6 +59,16 @@ collection.forEach(foodCard => {
     const shopCart = document.createElement("button")
     priceBuy.append(price)
     shopCart.innerHTML = "Add to cart"
+    shopCart.addEventListener("click", (event) => {
+        const buyList = document.createElement("li")
+        const item = document.createElement("p")
+        item.innerHTML = foodCard.name
+        buyList.append(item)
+        const buyPrice = document.createElement("p")
+        buyPrice.innerHTML = foodCard.price + "€"
+        buyList.append(buyPrice)
+        document.body.children[2].children[1].append(buyList)
+    })
     priceBuy.append(shopCart)
     priceBuy.className = "buy-now"
     article.append(priceBuy)
